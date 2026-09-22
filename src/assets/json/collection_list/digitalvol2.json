@@ -1,6 +1,6 @@
 {
     "handle": "digitalvol2",
-    "date": "2026-09-13",
+    "date": "2026-09-21",
     "title": "Digital Drawings Vol.2",
     "thumbnail-id": "06",
     "tags": [],
@@ -47,6 +47,12 @@
             "title": "Urban Chilling",
             "date": "2026-09-13",
             "caption": "A gift for my colleague, based around Italy."
+        },
+        {
+            "id": "08",
+            "title": "Escaping the matrix",
+            "date": "2026-09-21",
+            "caption": "Done this for fun."
         }
     ]
 }

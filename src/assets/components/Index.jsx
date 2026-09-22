@@ -17,7 +17,7 @@ const img_list = [
     VITE_MEDIA_SUBDOMAIN + "/image/af2026/04.jpg",
     VITE_MEDIA_SUBDOMAIN + "/image/af2026/01.jpg",
     VITE_MEDIA_SUBDOMAIN + "/image/dabcelebration/03.jpg",
-    VITE_MEDIA_SUBDOMAIN + "/image/digitalvol2/05.jpg",
+    VITE_MEDIA_SUBDOMAIN + "/image/digitalvol2/08.jpg",
     VITE_MEDIA_SUBDOMAIN + "/image/digitalvol2/02.jpg",
     VITE_MEDIA_SUBDOMAIN + "/image/digitalvol2/06.jpg",
     VITE_MEDIA_SUBDOMAIN + "/image/dabcelebration/02.jpg"
