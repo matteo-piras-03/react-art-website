@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect, useContext, createContext } from 'react';
 import { createPortal } from 'react-dom';
 import groupList from '../json/warmups.json';
 import settingsstyles from '../scss/settings.module.scss';
-import { LinkPreview, TitleHead } from "./additional_info/Head_info.jsx";
+import Seo from "./additional_info/Head_info.jsx";
 
 const VITE_MEDIA_SUBDOMAIN = import.meta.env.VITE_MEDIA_SUBDOMAIN;
 const VITE_DOMAIN = import.meta.env.VITE_DOMAIN;
@@ -18,10 +18,9 @@ export default function Settings() {
 
     return (
         <>
-            <TitleHead title="Warmup generator settings - pirAs03" />
-            <LinkPreview
-                link={VITE_DOMAIN + "/warmups/settings"}
-                title="pirAs03 - Warmup Exercises Generator Settings"
+            <Seo
+                url={VITE_DOMAIN + "/warmups/settings"}
+                title="Warmup Generator Settings - pirAs03"
                 description="A simple warmup drawing exercises generator complete with timer, instructions and score system, fully customizable by the user."
                 image={VITE_MEDIA_SUBDOMAIN + "/image/asset/previews/settings.jpg"}
             />

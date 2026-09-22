@@ -14,7 +14,7 @@ li {
     justify-content: space-between;
     align-items: center;
     color: var(--primary-color);
-    margin: 20px auto;
+    margin: 2rem auto;
 
     h1{
         text-align: center;
@@ -30,6 +30,27 @@ li {
             max-width: 20rem;
             max-height: 20rem;
             border-radius: 1.5rem;
+        }
+        
+        #name-gender{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            column-gap: 0.5rem;
+            margin: 2rem 0px;
+
+            .name{
+                margin: 0px;
+                font-size: 2rem;
+                color: var(--primary-color);
+            }
+
+            .gender{
+                font-size: 1rem;
+                margin: 0px 0px 0.25rem 0px;
+                color: var(--secondary-color);
+            }
         }
 
         a{

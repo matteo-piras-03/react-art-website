@@ -1,7 +1,7 @@
 import styles from '../scss/index.module.scss';
 import { createPortal } from "react-dom";
 import { useState, createContext, useContext, useEffect } from "react";
-import { LinkPreview, TitleHead } from "./additional_info/Head_info.jsx";
+import Seo from "./additional_info/Head_info.jsx";
 
 const ModalContext = createContext();
 const VITE_MEDIA_SUBDOMAIN = import.meta.env.VITE_MEDIA_SUBDOMAIN;
@@ -30,11 +30,10 @@ function Index() {
     });
     return (
         <>
-            <TitleHead title="Home - pirAs03"/>
-            <LinkPreview
-                link={VITE_DOMAIN}
-                title="pirAs03 - Socials, art and more!"
-                description="Hello! My name is Matteo Piras, I'm a 23 years old male from Italy. I'm currently an electronics engineer student, but as a hobby I started drawing seriously on late 2025.
+            <Seo
+                url={VITE_DOMAIN}
+                title="Home - pirAs03"
+                description="Hello! My name is Matteo Piras, I'm a 23 years old artist from Italy. I'm currently an electronics engineer student, but as a hobby I started drawing seriously on late 2025.
                 Currently a Drawabox student and nothing else, so everything you see here was born by trial and error. I also like cooking and videogames!"
                 image={VITE_MEDIA_SUBDOMAIN + "/image/asset/previews/home.jpg"}
             />
@@ -54,8 +53,11 @@ function StaticContent() {
             <div id={styles["section-0"]}>
                 <div id={styles["section-0-left"]}>
                     <img src={VITE_MEDIA_SUBDOMAIN + "/image/asset/hrnt_pfp.jpg"} id={styles.logo} alt="HRNT - 47c"/>
-                    <h1>pirAs03</h1>
-                    <p>Hello! My name is Matteo Piras, I'm a 23 years old male from Italy. I'm currently an electronics engineering student, but as a hobby I started drawing seriously on late 2025.
+                    <div id={styles["name-gender"]}>
+                        <h1 className={styles.name}>pirAs03</h1>
+                        <h2 className={styles.gender}>he/him</h2>
+                    </div>
+                    <p>Hello! My name is Matteo Piras, I'm a 23 years old artist from Italy. I'm currently an electronics engineering student, but as a hobby I started drawing seriously on late 2025.
                     Currently a <a href="https://drawabox.com" target="_blank">Drawabox</a> student and nothing else, so everything you see here was born by trial and error. I also like cooking and videogames!</p>
                 </div>
                 <div id={styles["section-0-right"]}>

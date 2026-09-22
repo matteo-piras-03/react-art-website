@@ -1,7 +1,7 @@
 import { Routes, Route, NavLink } from 'react-router-dom';
 import commonstyles from '../scss/common_warmups_settings.module.scss';
 import genstyles from '../scss/warmups.module.scss';
-import { LinkPreview, TitleHead } from './additional_info/Head_info.jsx';
+import Seo from './additional_info/Head_info.jsx';
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 
@@ -77,10 +77,9 @@ function Generator() {
 
     return (
         <>
-        <TitleHead title="Warmups - pirAs03" />
-        <LinkPreview
-            link={VITE_DOMAIN + "/warmups/settings"}
-            title="pirAs03 - Warmup Exercises Generator"
+        <Seo
+            url={VITE_DOMAIN + "/warmups"}
+            title="Warmup Generator - pirAs03"
             description="A simple warmup drawing exercises generator complete with timer, instructions and score system, fully customizable by the user."
             image={VITE_MEDIA_SUBDOMAIN + "/image/asset/previews/warmups.jpg"}
         />

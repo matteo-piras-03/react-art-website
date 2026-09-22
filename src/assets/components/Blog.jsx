@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { useState, useEffect, Suspense } from "react";
 import ReactMarkdown from 'react-markdown';
 import postsInfo from '../json/blogposts.json';
-import { LinkPreview, TitleHead } from "./additional_info/Head_info.jsx";
+import Seo from "./additional_info/Head_info.jsx";
 
 const VITE_MEDIA_SUBDOMAIN = import.meta.env.VITE_MEDIA_SUBDOMAIN;
 const VITE_DOMAIN = import.meta.env.VITE_DOMAIN;
@@ -18,10 +18,9 @@ function Blog() {
 
     return (
         <>
-        <TitleHead title="Blog - pirAs03"/>
-        <LinkPreview
-            link={VITE_DOMAIN + "/blog"}
-            title="pirAs03 - Blog posts"
+        <Seo
+            url={VITE_DOMAIN + "/blog"}
+            title="Blog - pirAs03"
             description="A place where I write about my drawing career and the development of this website, and can yap without being judged."
             image={VITE_MEDIA_SUBDOMAIN + "/image/asset/previews/blog.jpg"}
         />
@@ -71,9 +70,8 @@ function BlogPost() {
 
     return (
         <>
-        <TitleHead title={title + " - Blog - pirAs03"}/>
-        <LinkPreview
-            link={VITE_DOMAIN + "/blog/" + postId}
+        <Seo
+            url={VITE_DOMAIN + "/blog/" + postId}
             title={title + " - Blog - pirAs03"}
             description={description}
         />

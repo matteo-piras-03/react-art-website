@@ -1,7 +1,7 @@
 import styles from '../scss/art.module.scss';
 import collectionstyles from '../scss/collection_page.module.scss';
 import { memo, useEffect, useState, useReducer, useTransition, useCallback, useMemo} from 'react';
-import { LinkPreview, TitleHead } from "./additional_info/Head_info.jsx";
+import Seo  from "./additional_info/Head_info.jsx";
 import { Routes, Route, Link, useLocation, useParams } from "react-router-dom";
 import { createPortal } from 'react-dom';
 
@@ -192,13 +192,12 @@ function GalleryPage() {
     ].join("::");
     return (
     <>
-        <TitleHead title="Art - pirAs03" />
-            <LinkPreview
-                link={VITE_DOMAIN + "/art"}
-                title="pirAs03 - Art gallery"
-                description="A collection of my artwork over the years, showcasing various styles and mediums, customizable by the user."
-                image={VITE_MEDIA_SUBDOMAIN + "/image/asset/previews/art.jpg"}
-            />
+        <Seo
+            title="Art - pirAs03"
+            description="A collection of my artwork over the years, showcasing various styles and mediums, customizable by the user."
+            url={VITE_DOMAIN + "/art"}
+            image={VITE_MEDIA_SUBDOMAIN + "/image/asset/previews/art.jpg"}
+        />
             <article id="main">
                 <h1 className={styles["title"]}>Art Gallery</h1>
                 <div id={styles["section-0"]}>
@@ -325,9 +324,8 @@ function CollectionPage() {
     }
     return (
         <>
-            <TitleHead title={collection.title + " - Art - pirAs03"} />
-            <LinkPreview
-                link={VITE_DOMAIN + "/art/" + artId}
+            <Seo
+                url={VITE_DOMAIN + "/art/" + artId}
                 title={collection.title + " - Art - pirAs03"}
                 description="A collection of drawings made by pirAs03."
                 image={VITE_MEDIA_SUBDOMAIN + "/image/" + collection.handle + "/" + collection["thumbnail-id"] + ".jpg"}
@@ -455,11 +453,10 @@ function CollectionModal({ visible }) {
     }
     return createPortal(
         <>
-            <TitleHead title={collection.title + " - Art - pirAs03"} />
-            <LinkPreview
-                link={VITE_DOMAIN + "/art/" + artId}
+            <Seo
+                url={VITE_DOMAIN + "/art/" + artId}
                 title={collection.title + " - Art - pirAs03"}
-                description= "A collection of drawings made by pirAs03."
+                description="A collection of drawings made by pirAs03."
                 image={VITE_MEDIA_SUBDOMAIN + "/image/" + collection.handle + "/" + collection["thumbnail-id"] + ".jpg"}
             />
             <div id={styles["modal-view"]} className={visible ? styles["visible"] : styles["hidden"]} onClick={(event) => { if (event.target.id === styles["modal-view"]) { window.history.back(); } }}>
