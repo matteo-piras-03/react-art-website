@@ -1,0 +1,77 @@
+:root {
+    --general-width: 72rem;
+    --dark-mode-percentage: 100%;
+}
+
+html {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: var(--background-gradient);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--body-background-color);
+    
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    flex: 1;
+}
+
+.hidden{
+    display: none;
+}
+
+.body-noscroll{
+    overflow: hidden;
+}
+
+#main{
+    max-width: 72rem;
+    width: min(72rem, 100%);
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+    font-family: "Reddit Sans", Arial, Helvetica, sans-serif;
+}
+
+p{
+    line-height: 1.5;
+}
+
+button{
+    font-family: "Noto Sans", sans-serif;
+}
+
+label{
+    font-family: "Noto Sans", sans-serif;
+}  
+
+input[type="number"]{
+    font-family: "Noto Sans Mono", sans-serif;
+}
+
+input[type="text"]{
+    font-family: "Noto Sans Mono", sans-serif;
+}
+
+textarea{
+    font-family: "Noto Sans Mono", sans-serif;
+}
+
+@media (max-width: 480px){
+    html{
+        font-size: 12px;
+    }
+}

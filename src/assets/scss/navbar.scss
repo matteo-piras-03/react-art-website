@@ -1,0 +1,99 @@
+.active {
+    background-color: var(--selected-color);
+}
+
+#nav {
+    height: 53.5px;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    font-size: 1rem;
+
+    #nav-container{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        max-width: 72rem;
+        margin: 0 auto;
+    }
+
+    a{
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        color: var(--primary-color);
+        &:hover{
+            transition: background-color 0.3s ease;
+            background-color: var(--a-background-color);
+            color: var(--accent-color);
+        }
+    }
+
+    #nav_left{
+        font-family: "Reddit Sans", sans-serif;
+        font-size: 1.25rem;
+    }
+
+    #nav_right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 15rem;
+
+        a{
+            margin: 0px 0.5rem;
+        }
+
+        button{
+            border: none;
+            border-radius: 25%;
+            background-color: var(--a-background-color);
+            padding: 0px;
+            margin: 0px 10px;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover{
+                background-color: var(--primary-color);
+                transition: background-color 0.3s ease;
+                --dark-mode-percentage: 0%;
+            }
+
+            img{
+                width: 1.5rem;
+                height: 1.5rem;
+                display: block;
+                margin: auto;
+                transition: filter 0.3s ease;
+
+                &.hidden{
+                    display: none;
+                }
+            }
+
+            #dark{
+                filter: invert(var(--dark-mode-percentage));
+            }
+
+            #light{
+                filter: invert(calc(100% - var(--dark-mode-percentage)));
+            }
+        }   
+    }
+}
+
+@media (max-width: 480px){
+    #nav {
+        height: 39px;
+
+        #nav_right{
+            min-width: 0px;
+
+            a{
+                margin: 0px 5px;
+            }
+        }
+    }
+}

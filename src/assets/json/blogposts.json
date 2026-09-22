@@ -1,0 +1,50 @@
+[
+    {
+        "id": "world-place-rant",
+        "date": "2026-09-22",
+        "title": "Rant about the world and my place",
+        "description": "A discussion of what's currently happening in the world, the place I live and my likely neurodivergency."
+    },
+    {
+        "id": "v2-0",
+        "date": "2026-09-22",
+        "title": "v2.0",
+        "description": "React porting of the website."
+    },
+    {
+        "id": "v1-22",
+        "date": "2026-08-27",
+        "title": "v1.22",
+        "description": "Warmup generator third update."
+    },
+    {
+        "id": "v1-21",
+        "date": "2026-08-09",
+        "title": "v1.21",
+        "description": "Warmup generator second update."
+    },
+    {
+        "id": "v1-2",
+        "date": "2026-08-08",
+        "title": "v1.2",
+        "description": "Warmup generator update."
+    },
+    {
+        "id": "v1-1",
+        "date": "2026-08-06",
+        "title": "v1.1",
+        "description": "Art gallery update."
+    },
+    {
+        "id": "v1-0",
+        "date": "2026-08-04",
+        "title": "v1.0",
+        "description": "Info on the development of this website."
+    },
+    {
+        "id": "about-me",
+        "date": "2026-08-04",
+        "title": "About Me",
+        "description": "More info about my drawing career."
+    }
+]

@@ -1,0 +1,228 @@
+[
+    {
+        "label": "Drawabox",
+        "subgroups": [
+            {
+                "label": "Lesson 1: Lines, Ellipses and Boxes",
+                "exercises": [
+                    {
+                        "label": "Superimposed Lines",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l1/superimposed_lines.jpg"
+                    },
+                    {
+                        "label": "Ghosted Lines",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l1/ghosted_lines.jpg"
+                    },
+                    {
+                        "label": "Ghosted Planes",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l1/ghosted_planes.jpg"
+                    },
+                    {
+                        "label": "Table of Ellipses",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l1/table_of_ellipses.jpg"
+                    },
+                    {
+                        "label": "Ellipses in Planes",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l1/ellipses_in_planes.jpg"
+                    },
+                    {
+                        "label": "Funnels",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l1/funnels.jpg"
+                    },
+                    {
+                        "label": "Plotted Perspective",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l1/plotted_perspective.jpg"
+                    },
+                    {
+                        "label": "Rough Perspective",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l1/rough_perspective.jpg"
+                    },
+                    {
+                        "label": "Rotated Boxes",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l1/rotated_boxes.jpg"
+                    },
+                    {
+                        "label": "Organic Perspective",
+                        "thumbnail": "https://d15v304a6xpq4b.cloudfront.net/lesson_images/598a86fb.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Lesson 2: Contour Lines, Texture and Construction",
+                "exercises": [
+                    {
+                        "label": "Organic Arrows",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l2/organic_arrows.jpg"
+                    },
+                    {
+                        "label": "Sausages with Contour Curves",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l2/sausages_with_contour_curves.jpg"
+                    },
+                    {
+                        "label": "Texture Analysis",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l2/texture_analysis.jpg"
+                    },
+                    {
+                        "label": "Dissections",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l2/dissections.jpg"
+                    },
+                    {
+                        "label": "Form Intersections",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l2/form_intersections.jpg"
+                    },
+                    {
+                        "label": "Organic Intersections",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l2/organic_intersections.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Lesson 3: Applying Construction to Plants",
+                "exercises": [
+                    {
+                        "label": "Leaves",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l3/leaves.jpg"
+                    },
+                    {
+                        "label": "Branches",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l3/branches.jpg"
+                    },
+                    {
+                        "label": "Plant Construction",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l3/plant_construction.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Lesson 4: Applying Construction to Insects",
+                "exercises": [
+                    {
+                        "label": "Insect Construction",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l4/insect_construction.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Lesson 5: Applying Construction to Animals",
+                "exercises": [
+                    {
+                        "label": "Bird Construction",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l5/bird_construction.jpg"
+                    },
+                    {
+                        "label": "Non-hooved Quadruped Construction",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l5/non-hooved_quadruped_construction.jpg"
+                    },
+                    {
+                        "label": "Hooved Quadruped Construction",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l5/hooved_quadruped_construction.jpg"
+                    },
+                    {
+                        "label": "Random Animal Construction",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/l5/random_animal_construction.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Lesson 6: Applying Construction to Everyday Objects",
+                "exercises": [
+                    {
+                        "label": "Everyday Object Construction",
+                        "thumbnail": "https://d15v304a6xpq4b.cloudfront.net/lesson_images/58a65d51.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Lesson 7: Applying Construction to Vehicles",
+                "exercises": [
+                    {
+                        "label": "Form Intersection Vehicle",
+                        "thumbnail": "https://d15v304a6xpq4b.cloudfront.net/lesson_images/d90135f2.jpg"
+                    },
+                    {
+                        "label": "Vehicle Construction",
+                        "thumbnail": "https://d15v304a6xpq4b.cloudfront.net/lesson_images/d90135f2.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Challenges",
+                "exercises": [
+                    {
+                        "label": "Boxes",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/drawabox/challenges/boxes.jpg"
+                    },
+                    {
+                        "label": "Cylinders",
+                        "thumbnail": "https://d15v304a6xpq4b.cloudfront.net/lesson_images/4b7132ee.jpg"
+                    },
+                    {
+                        "label": "Wheels",
+                        "thumbnail": "https://d15v304a6xpq4b.cloudfront.net/lesson_images/984e1fdf.jpg"
+                    },
+                    {
+                        "label": "Treasure Chests",
+                        "thumbnail": "https://d15v304a6xpq4b.cloudfront.net/lesson_images/f9e82311.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "label": "brokendraw",
+        "subgroups": [
+            {
+                "label": "Level 1: Mechanics",
+                "exercises":[
+                    {
+                        "label": "Point Coordination",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/brokendraw/point_coordination.jpg"
+                    },
+                    {
+                        "label": "Coin Flips",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/brokendraw/coin_flips.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Level 2: Visual Coordination",
+                "exercises":[
+                    {
+                        "label": "Reflections",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/brokendraw/reflections.jpg"
+                    },
+                    {
+                        "label": "Silhouettes",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/brokendraw/silhouettes.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Level 3: Form Construction",
+                "exercises":[
+                    {
+                        "label": "Extrusion",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/brokendraw/extrusion.jpg"
+                    },
+                    {
+                        "label": "Rotation",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/brokendraw/rotation.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Level 4: Form Manipulation",
+                "exercises":[
+                    {
+                        "label": "Slicing",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/brokendraw/slicing.jpg"
+                    },
+                    {
+                        "label": "Stacking",
+                        "thumbnail": "https://media.piras03.com/image/asset/warmups/brokendraw/stacking.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,40 @@
+{
+    "handle": "dabcelebration",
+    "date": "2026-08-29",
+    "title": "Drawabox Celebrational Drawings",
+    "thumbnail-id": "01",
+    "tags": ["Drawabox"],
+    "mediums": ["Digital"],
+    "drawings": [
+        {
+            "id": "01",
+            "title": "Boxmancer",
+            "date": "2026-02-19",
+            "caption": "Celebration of the completion of the 250 box challenge."
+        },
+        {
+            "id": "02",
+            "title": "Training",
+            "date": "2026-04-18",
+            "caption": "Celebration of the completion of Lesson 2."
+        },
+        {
+            "id": "03",
+            "title": "Greenhouse",
+            "date": "2026-06-02",
+            "caption": "Celebration of the completion of Lesson 3."
+        },
+        {
+            "id": "04",
+            "title": "Fearless",
+            "date": "2026-08-17",
+            "caption": "Celebration of the completion of Lesson 4."
+        },
+        {
+            "id": "05",
+            "title": "Twilight Blurple",
+            "date": "2026-08-29",
+            "caption": "Celebration of the completion of Lesson 5."
+        }
+    ]
+}

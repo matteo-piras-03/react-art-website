@@ -1,0 +1,43 @@
+:root{
+    --modal-external-background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+
+[data-theme="dark"] {
+    --primary-color: #f5f5f5;
+    --secondary-color: #aaaaaa;
+    --background-color: rgba(255, 255, 255, 0.05);
+    --a-background-color: rgba(255, 255, 255, 0.2);
+    --accent-color: #ffffff;
+    --selected-color: #32af628c;
+    --selected-color-full: #32af62;
+    --border-color: #dcdcdc;
+    --light-border-color: rgba(255, 255, 255, 0.1);
+    --invisible-color: rgba(255, 255, 255, 0.0);
+    --menu-color: #28342a;
+    --background-gradient: linear-gradient(to bottom, #1c291f, #171920);
+    --body-background-color: #171920;
+    --modal-background-color: #3f504354;
+    --invert-percentage: 100%;
+    --error-color-full: #ff4d4d;
+}
+
+[data-theme="light"] {
+    --primary-color: #000000;
+    --secondary-color: #464646;
+    --background-color: rgba(255, 255, 255, 0.3);
+    --a-background-color: rgba(0, 0, 0, 0.2);
+    --accent-color: #000000;
+    --selected-color: #32af628c;
+    --selected-color-full: #2b9955;
+    --border-color: #222222;
+    --light-border-color: rgba(0, 0, 0, 0.2);
+    --invisible-color: rgba(255, 255, 255, 0.0);
+    --menu-color: #d8eedd;
+    --background-gradient: linear-gradient(to bottom, #c7e7ce, #c2c8e2);
+    --body-background-color: #c2c8e2;
+    --modal-background-color: #c7e7cec2;
+    --invert-percentage: 0%;
+    --error-color-full: #912020;
+}

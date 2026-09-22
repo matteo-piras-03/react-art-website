@@ -1,0 +1,107 @@
+[data-theme="dark"] {
+    --start-color: rgba(50, 175, 98, 0.2);
+    --pause-color: rgba(175, 173, 50, 0.2);
+    --reset-color: rgba(175, 50, 50, 0.2);
+}
+
+[data-theme="light"] {
+    --start-color: rgba(50, 175, 98, 0.2);
+    --pause-color: rgba(175, 173, 50, 0.2);
+    --reset-color: rgba(175, 50, 50, 0.2);
+}
+
+h1{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin: 40px 0px 30px 10px;
+}
+
+h2{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin: 40px 0px 30px 0px;
+}
+
+p{
+    color: var(--primary-color);
+}
+
+span{
+    color: var(--primary-color)
+}
+
+#section-0{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    color: var(--primary-color);
+    margin: 20px auto;
+
+    .nav-link{
+        transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid;
+        border-color: var(--light-border-color);
+        border-radius: 0.25rem;
+        color: var(--primary-color);
+        background-color: var(--invisible-color);
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+        
+
+        &:hover{
+            color: var(--accent-color);
+            text-decoration: none;
+            border-color: var(--selected-color-full);
+            background-color: var(--background-color);
+        }
+
+        &.active{
+            color: var(--accent-color);
+            text-decoration: none;
+            border-color: var(--selected-color-full);
+            background-color: var(--background-color);
+            cursor: default;
+        }
+    }
+}
+
+@media (max-width:1280px) {
+
+    #section-0{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+}
+
+@media (max-width:960px){
+
+    #section-0{
+
+        gap: 1rem;
+
+        a{
+            font-size: 1.2rem;
+        }
+        
+    }
+
+}
+
+@media (max-width:480px){
+
+    #section-0{
+        width: 95%;
+    }
+
+}
