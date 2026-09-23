@@ -1,7 +1,7 @@
-import styles from '../scss/art.module.scss';
-import collectionstyles from '../scss/collection_page.module.scss';
+import styles from '../assets/scss/art.module.scss';
+import collectionstyles from '../assets/scss/collection_page.module.scss';
 import { memo, useEffect, useState, useReducer, useTransition, useCallback, useMemo} from 'react';
-import Seo  from "./additional_info/Head_info.jsx";
+import Seo from "../components/Head_info.jsx";
 import { Routes, Route, Link, useLocation, useParams } from "react-router-dom";
 import { createPortal } from 'react-dom';
 
@@ -9,7 +9,7 @@ const VITE_MEDIA_SUBDOMAIN = import.meta.env.VITE_MEDIA_SUBDOMAIN;
 const VITE_DOMAIN = import.meta.env.VITE_DOMAIN;
 
 const artGalleryFiles = Object.values(
-    import.meta.glob("../json/collection_list/*.json", { eager: true, import: "default" })
+    import.meta.glob("../assets/json/collection_list/*.json", { eager: true, import: "default" })
 );
 
 const mediumList = Array.from(new Set(artGalleryFiles.flatMap(file => file.mediums))).sort();
@@ -205,7 +205,7 @@ function GalleryPage() {
                         <label>Sort:</label>
                         <button id={styles["sort-select"]} onClick={(event) => { event.stopPropagation(); closeAllMenus("sort-select"); setSortMenuOpen(isOpen => !isOpen); }}>
                             <span>{sortOption}</span>
-                            <img src="assets/svg/chevron-down-svgrepo-com.svg" className={sortMenuOpen ? styles["flipped"] : ""}/>
+                            <img src="../../assets/svg/chevron-down-svgrepo-com.svg" className={sortMenuOpen ? styles["flipped"] : ""}/>
                         </button>
                         <div className={`${styles["menu"]} ${sortMenuOpen ? styles["open"] : ""}`}>
                             <button className={`${styles["radio"]} ${sortOption === "Newest first" ? styles["selected"] : ""}`} onClick={() => handleSortOptionChange("Newest first")}>
@@ -222,7 +222,7 @@ function GalleryPage() {
                         <label>Mediums:</label>
                         <button id={styles["medium-select"]} onClick={(event) => { event.stopPropagation(); closeAllMenus("medium-select"); setMediumMenuOpen(isOpen => !isOpen); }}>
                             <span>{(mediumOption.empty || mediumOption.selected.length === mediumList.length) ? "All mediums" : (mediumOption.selected.length + " selected")}</span>
-                            <img src="assets/svg/chevron-down-svgrepo-com.svg" className={mediumMenuOpen ? styles["flipped"] : ""}/>
+                            <img src="../../assets/svg/chevron-down-svgrepo-com.svg" className={mediumMenuOpen ? styles["flipped"] : ""}/>
                         </button>
                         <div className={`${styles["menu"]} ${mediumMenuOpen ? styles["open"] : ""}`}>
                             {mediumList.map((medium, index) => (
@@ -240,7 +240,7 @@ function GalleryPage() {
                         <label>Tags:</label>
                         <button id={styles["tag-select"]} onClick={(event) => { event.stopPropagation(); closeAllMenus("tag-select"); setTagMenuOpen(isOpen => !isOpen); }}>
                             <span>{(tagOption.empty || tagOption.selected.length === tagList.length) ? "All tags" : (tagOption.selected.length + " selected")}</span>
-                            <img src="assets/svg/chevron-down-svgrepo-com.svg" className={tagMenuOpen ? styles["flipped"] : ""}/>
+                            <img src="../../assets/svg/chevron-down-svgrepo-com.svg" className={tagMenuOpen ? styles["flipped"] : ""}/>
                         </button>
                         <div className={`${styles["menu"]} ${tagMenuOpen ? styles["open"] : ""}`}>
                             {tagList.map((tag, index) => (

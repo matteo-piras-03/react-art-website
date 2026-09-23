@@ -1,10 +1,10 @@
-import styles from '../scss/blog.module.scss';
-import poststyles from '../scss/blogpost.module.scss';
+import styles from '../assets/scss/blog.module.scss';
+import poststyles from '../assets/scss/blogpost.module.scss';
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect, Suspense } from "react";
 import ReactMarkdown from 'react-markdown';
-import postsInfo from '../json/blogposts.json';
-import Seo from "./additional_info/Head_info.jsx";
+import postsInfo from '../assets/json/blogposts.json';
+import Seo from "../components/Head_info.jsx";
 
 const VITE_MEDIA_SUBDOMAIN = import.meta.env.VITE_MEDIA_SUBDOMAIN;
 const VITE_DOMAIN = import.meta.env.VITE_DOMAIN;

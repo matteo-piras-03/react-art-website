@@ -1,6 +1,6 @@
 import {Link, NavLink} from "react-router-dom";
 import { useState } from "react";
-import "../../scss/navbar.scss"
+import "../assets/scss/navbar.scss"
 
 function getInitialTheme() {
   const darkModeMediaQuery = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");

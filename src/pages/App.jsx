@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 
-import '../scss/root.scss'
-import '../scss/colors.scss'
-import '../scss/typography.scss'
+import '../assets/scss/root.scss'
+import '../assets/scss/colors.scss'
+import '../assets/scss/typography.scss'
 
-import Header from "./page_elements/Header";
-import Footer from "./page_elements/Footer";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 const Index = lazy(() => import("./Index.jsx"));
 const Art = lazy(() => import("./Art.jsx"));
 const Blog = lazy(() => import("./Blog.jsx"));

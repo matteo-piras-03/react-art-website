@@ -1,11 +1,11 @@
 import { Routes, Route, NavLink } from 'react-router-dom';
-import commonstyles from '../scss/common_warmups_settings.module.scss';
-import genstyles from '../scss/warmups.module.scss';
-import Seo from './additional_info/Head_info.jsx';
+import commonstyles from '../assets/scss/common_warmups_settings.module.scss';
+import genstyles from '../assets/scss/warmups.module.scss';
+import Seo from '../components/Head_info.jsx';
 import { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import { generateExercise, saveExercisetoLocalStorage } from '../js/Warmups_Data_Manager.js';
+import { generateExercise, saveExercisetoLocalStorage } from '../assets/js/Warmups_Data_Manager.js';
 
 const VITE_MEDIA_SUBDOMAIN = import.meta.env.VITE_MEDIA_SUBDOMAIN;
 const VITE_DOMAIN = import.meta.env.VITE_DOMAIN;
@@ -279,9 +279,9 @@ function TimerButtons({ timerState, setTimerState, muteTimerSound, setMuteTimerS
                 {(timerState.state !== "running") && (
                     <button id={genstyles['sound']} onClick={toggleSound}>
                         {muteTimerSound ? (
-                            <img src="assets/svg/volume-xmark-svgrepo-com.svg" alt="Muted"/>
+                            <img src="../../assets/svg/volume-xmark-svgrepo-com.svg" alt="Muted"/>
                         ) : (
-                            <img src="assets/svg/volume-max-svgrepo-com.svg" alt="Sound"/>
+                            <img src="../../assets/svg/volume-max-svgrepo-com.svg" alt="Sound"/>
                         )}
                     </button>
                 )}

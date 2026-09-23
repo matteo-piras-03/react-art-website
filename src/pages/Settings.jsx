@@ -1,13 +1,13 @@
 import { useState, useMemo, useEffect, useContext, createContext } from 'react';
 import { createPortal } from 'react-dom';
-import groupList from '../json/warmups.json';
-import settingsstyles from '../scss/settings.module.scss';
-import Seo from "./additional_info/Head_info.jsx";
+import groupList from '../assets/json/warmups.json';
+import settingsstyles from '../assets/scss/settings.module.scss';
+import Seo from "../components/Head_info.jsx";
 
 const VITE_MEDIA_SUBDOMAIN = import.meta.env.VITE_MEDIA_SUBDOMAIN;
 const VITE_DOMAIN = import.meta.env.VITE_DOMAIN;
 
-import {getStoredInnerButtonRecords, saveDefaultExercisesToLocalStorage, saveExercisetoLocalStorage, getStoredCustomExercises, deleteCustomExerciseFromLocalStorage, buildExportJSON, handleImportData} from "../js/Warmups_Data_Manager"
+import {getStoredInnerButtonRecords, saveDefaultExercisesToLocalStorage, saveExercisetoLocalStorage, getStoredCustomExercises, deleteCustomExerciseFromLocalStorage, buildExportJSON, handleImportData} from "../assets/js/Warmups_Data_Manager.js"
 
 const buttonRecordsContext = createContext();
 const customExercisesContext = createContext();
@@ -229,7 +229,7 @@ function CustomExerciseGroup({ setModalVisible }) {
                 
                 <li>
                     <button className={settingsstyles['inner-button']} id="new-exercise-button" onClick={() => setModalVisible(true)}>
-                        <div><img src="../assets/svg/plus-svgrepo-com.svg" className={settingsstyles['plus']}/><span>Add custom exercise...</span></div>
+                        <div><img src="../../assets/svg/plus-svgrepo-com.svg" className={settingsstyles['plus']}/><span>Add custom exercise...</span></div>
                     </button>
                 </li>   
             </ul>
@@ -283,7 +283,7 @@ function CustomExerciseButton({label, indicatorHandler, childSelected, rangeValu
                 <button className={settingsstyles['inner-button']} onClick={(e) => {e.stopPropagation(); indicatorHandler();}}>
                     <div><div className={`${settingsstyles['indicator']} ${childSelected ? settingsstyles['selected'] : ''}`}></div><span>{label}</span></div>
                     <div>
-                        <img src="../assets/svg/trash-alt-svgrepo-com.svg" className={settingsstyles['trash-icon']} onClick={(e) => {e.stopPropagation(); deleteHandler(label);}}/>
+                        <img src="../../assets/svg/trash-alt-svgrepo-com.svg" className={settingsstyles['trash-icon']} onClick={(e) => {e.stopPropagation(); deleteHandler(label);}}/>
                         <input type="range" name="score" min="1" max="5" value={rangeValue? rangeValue : 1} onChange={(e) => {rangeValueHandler(e.target.value);}} onClick={(e) => {e.stopPropagation();}}/>
                     </div>
                 </button>

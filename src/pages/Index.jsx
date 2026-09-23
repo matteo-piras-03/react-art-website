@@ -1,7 +1,7 @@
-import styles from '../scss/index.module.scss';
+import styles from '../assets/scss/index.module.scss';
 import { createPortal } from "react-dom";
 import { useState, createContext, useContext, useEffect } from "react";
-import Seo from "./additional_info/Head_info.jsx";
+import Seo from "../components/Head_info.jsx";
 
 const ModalContext = createContext();
 const VITE_MEDIA_SUBDOMAIN = import.meta.env.VITE_MEDIA_SUBDOMAIN;
