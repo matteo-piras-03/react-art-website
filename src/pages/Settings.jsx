@@ -418,7 +418,7 @@ function ImportExport({ setCustomExercises, setInnerButtonRecords }) {
             </li>
             <li>
                 <form name="import-form" id="import-form" onSubmit={handleImportSubmit}>
-                    <textarea id={settingsstyles['import-data']} placeholder="Paste imported data here" value={importAreaValue} onChange={(e) => setImportAreaValue(e.target.value)}></textarea>
+                    <textarea id={settingsstyles['import-data']} placeholder="Paste data to import here" value={importAreaValue} onChange={(e) => setImportAreaValue(e.target.value)}></textarea>
                     <button id={settingsstyles['import-button']} type="submit">Import data</button>
                 </form>
             </li>

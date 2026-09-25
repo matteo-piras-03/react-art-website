@@ -66,9 +66,21 @@ function Generator() {
             ...prevState,
             state: "initial"
         }));
-        generateExercise(exercise.title).then((exercise) => {
-            setExercise(exercise);
-        });
+        generateExercise(exercise.title)
+            .then((nextExercise) => {
+                setExercise(nextExercise);
+            })
+            .catch(() => {
+                setExercise({
+                    error: true,
+                    title: "Unable to generate an exercise. Please try again.",
+                    group: "",
+                    subgroup: "",
+                    img_src: null,
+                    instructions: "",
+                    range: ""
+                });
+            });
     }
 
     useEffect(() => {

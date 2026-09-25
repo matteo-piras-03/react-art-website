@@ -26,7 +26,7 @@ function getStoredInnerButtonRecords() {
             saveDefaultExercisesToLocalStorage(true);
             return getStoredInnerButtonRecords();
         }
-        return storedRecords.map(record => normalizeInnerButtonRecord(record));
+        return storedRecords.map(record => normalizeInnerButtonRecord(record)).filter(Boolean);
         
     } catch (error) {
         saveDefaultExercisesToLocalStorage();
@@ -379,14 +379,19 @@ async function generateExercise(currentExerciseKey = null) {
         });
     });
 
-    const selectedExerciseInstructions = await fetch("../../assets/md/warmups/" + selectedGroup.replace(/\s+/g, "_").trim().toLowerCase() + "/" + selectedExercise.key.replace(/\s+/g, "_").trim().toLowerCase() + ".md").then(response => response.text()).catch(() => "Instructions not found.");
-    
     if (!selectedGroup || !selectedSubgroup || !selectedExerciseData) {
         return {
             error: true,
             title: "Exercise data not found."
         };
     }
+
+    const groupPath = selectedGroup.replace(/\s+/g, "_").trim().toLowerCase();
+    const exercisePath = selectedExercise.key.replace(/\s+/g, "_").trim().toLowerCase();
+    const instructionsUrl = `${import.meta.env.BASE_URL}assets/md/warmups/${groupPath}/${exercisePath}.md`;
+    const selectedExerciseInstructions = await fetch(instructionsUrl)
+        .then(response => response.ok ? response.text() : "Instructions not found.")
+        .catch(() => "Instructions not found.");
 
     //console.log("Selected Exercise Data:", selectedExerciseData);
     //console.log("Selected Group:", selectedGroup);
